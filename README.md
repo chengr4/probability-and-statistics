@@ -1,5 +1,9 @@
 # Probability
 
+- [Three Axios of Probability 機率三公理](#three-axios-of-probability-機率三公理)
+- [Conditional Probability 條件機率](./conditional-probability/)
+
+
 ## Three Axios of Probability 機率三公理
 
 1. For any event A, P(A) >= 0
@@ -21,4 +25,4 @@
 - If $A \in B$ => P(A) <= P(B): Inclusion-Exclusion Principle
 - Bool's Inequality: n個事件的連集機率 <= n個事件的機率之和
 - Bonferroni's Inequality: n個事件交集的機率 >= 1 - n個事件補集的機率之和
-  
+
