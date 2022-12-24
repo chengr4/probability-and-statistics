@@ -10,11 +10,13 @@
 
 - P(∅) = 0: Empty set
   ```math
-  S \cap ∅ = ∅ => S, ∅ mutually exclusive
+  S \cap ∅ = ∅: S, ∅ mutually exclusive
   加以 S \cup ∅ = S
   => P(S) = P(S \cup ∅) = P(S) + P(∅)
   => P(∅) = 0
   ```
-- 
+- P(A) + P(A') = 1: Complement
+  ```math
+  
   
   
