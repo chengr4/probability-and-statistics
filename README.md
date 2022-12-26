@@ -2,7 +2,7 @@
 
 - [Three Axios of Probability 機率三公理](#three-axios-of-probability-機率三公理)
 - [Conditional Probability 條件機率](./conditional-probability/)
-
+- [Independent Events](#independent-events)
 
 ## Three Axios of Probability 機率三公理
 
@@ -25,4 +25,10 @@
 - If $A \in B$ => P(A) <= P(B): Inclusion-Exclusion Principle
 - Bool's Inequality: n個事件的連集機率 <= n個事件的機率之和
 - Bonferroni's Inequality: n個事件交集的機率 >= 1 - n個事件補集的機率之和
+
+## Independent Events
+
+$$ P(A | B) = P(A) $$
+
+> I love this formula, it's so simple and elegant.
 
