@@ -32,3 +32,13 @@ $$ P(A | B) = P(A) $$
 
 > I love this formula, it's so simple and elegant.
 
+多事件的獨立:
+
+在 n 個事件中任取 m 個事件，若**全部**皆滿足:
+
+$$ P(A_1 \cap A_2, \cap ..., \cap A_m) = P(A_1)P(A_2)...P(A_m) $$
+
+則稱這 n 個事件為獨立事件。
+
+若 n = 5，要計算 $\binom{5}{2} + \binom{5}{3} + \binom{5}{4} + \binom{5}{5}$ 種事件
+
