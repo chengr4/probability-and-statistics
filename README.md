@@ -3,6 +3,7 @@
 - [Three Axios of Probability 機率三公理](#three-axios-of-probability-機率三公理)
 - [Conditional Probability 條件機率](./conditional-probability/)
 - [Independent Events](#independent-events)
+- [counting](#counting)
 
 ## Three Axios of Probability 機率三公理
 
@@ -42,3 +43,10 @@ $$ P(A_1 \cap A_2, \cap ..., \cap A_m) = P(A_1)P(A_2)...P(A_m) $$
 
 若 n = 5，要計算 $\binom{5}{2} + \binom{5}{3} + \binom{5}{4} + \binom{5}{5}$ 種事件
 
+## Counting
+
+### Before Counting
+
+- Distinguishable
+- With/Without Replacement
+- Order matters or not
