@@ -3,7 +3,8 @@
 - [Three Axios of Probability 機率三公理](#three-axios-of-probability-機率三公理)
 - [Conditional Probability 條件機率](./conditional-probability/)
 - [Independent Events](#independent-events)
-- [counting](#counting)
+- [Counting](#counting)
+- [Random Variables](./random-variable/)
 
 ## Three Axios of Probability 機率三公理
 
