@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{fullpage}
+\usepackage{parskip} % skip a line instead of indenting
+% \usepackage{graphicx} % for inserting images
+
+\title{CDF}
+\author{Eddie Cheng}
+\date{\today}
+
+\begin{document}
+% \tableofcontents % generate a table of contents
+\maketitle
+\subsection*{Definition}
+For a random variable $X$, the \textbf{cumulative distribution function} (CDF) of $X$ is defined as $F_X(x) = P(X \leq x)$.
+
+\subsection*{Usage}
+\begin{itemize}
+\item $P(a < X \leq b) = P(X \leq b) - P(X \leq a) = F_X(b) - F_X(a)$
+\end{itemize}
+
+\subsection*{Discrete Random Variables}
+\begin{itemize}
+  \item $F_X(x^+) = F_X(x)$
+  \item $F_X(x^-) = F_X(x) - P(X = x)$
+\end{itemize}
+
+\subsection*{Continuous Random Variables}
+\begin{itemize}
+  \item $F_X(x^+) = F_X(x) = F_X(x^-)$
+\end{itemize}
+
+\end{document}
