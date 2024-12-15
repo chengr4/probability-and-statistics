@@ -1,10 +1,14 @@
-# Probability
+# Probability and Statistics
 
 - [Three Axios of Probability 機率三公理](#three-axios-of-probability-機率三公理)
 - [Conditional Probability 條件機率](./conditional-probability/)
 - [Independent Events](#independent-events)
 - [Counting](#counting)
 - [Random Variables](./random-variable/)
+
+## 統計常用圖表
+
+- 散佈圖：兩個變數的關係
 
 ## Three Axioms of Probability 機率三公理
 
@@ -51,3 +55,21 @@ $$ P(A_1 \cap A_2, \cap ..., \cap A_m) = P(A_1)P(A_2)...P(A_m) $$
 - Distinguishable
 - With/Without Replacement
 - Order matters or not
+
+## Run python code
+
+1. activate virtualenv
+
+```bash
+source .venv/bin/activate
+```
+
+```
+deactivate
+```
+
+2. Run python code
+
+```bash
+python <filename>.py
+```
