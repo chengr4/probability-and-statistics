@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{fullpage}
+\usepackage{parskip} % skip a line instead of indenting
+% \usepackage{graphicx} % for inserting images
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{tikz} % for plot
+
+\newtheorem*{rem}{Remark}
+
+\title{Measures}
+\author{R4 Cheng}
+\date{\today}
+
+\newcommand{\remark}[1]{
+  \begin{rem}
+    \color{cyan}
+    #1
+  \end{rem}
+}
+
+\begin{document}
+\maketitle
+
+\subsection*{For Continuous Data}
+
+\begin{enumerate}
+    \item Central Tendency
+    \item Variability or Dispersion
+    \item Skewness
+    \item Kurtosis
+\end{enumerate}
+
+\subsubitem{Central Tendency}
+
+Common central tendency measures: mean, median, mode (the most frequent value)
+
+\subsubsection*{Mean}
+
+Sample Mean:
+\[
+\bar{x} = \frac{\sum x_i}{n}
+\]
+
+Population Mean:
+\[
+\mu = \frac{\sum X_i}{N}
+\]
+
+\subsubsection*{Median}
+
+Sample Median: $\tilde{x}$
+
+Population Median: $\eta$ (eta)
+
+\end{document}
