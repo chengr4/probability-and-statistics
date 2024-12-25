@@ -13,7 +13,7 @@
 \author{R4 Cheng}
 \date{\today}
 
-\newcommand{\remark}[1]{
+\newcommand{\Remark}[1]{
   \begin{rem}
     \color{cyan}
     #1
@@ -32,7 +32,7 @@
     \item Kurtosis
 \end{enumerate}
 
-\subsubsection*{Central Tendency}
+\subsection*{Central Tendency}
 
 Common central tendency measures: mean, median, mode (the most frequent value)
 
@@ -54,15 +54,22 @@ Sample Median: $\tilde{x}$
 
 Population Median: $\eta$ (eta)
 
-\subsubsection*{Dispersion or Variability}
+\subsection*{Dispersion or Variability}
 
 4 common measures of dispersion:
 
 \begin{enumerate}
-    \item Range
-    \item Variance
-    \item Standard Deviation
-    \item Coefficient of Variation (CV)
+    \item Range: $R = \text{max} - \text{min}$
+    \item Variance: population $\sigma^2 = \frac{\sum (X_i - \mu)^2}{N}$, sample $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} = \frac{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}{n-1} $
+    \item Standard Deviation: population $\sigma = \sqrt{\sigma^2}$, sample $s = \sqrt{s^2}$
+    \item Coefficient of Variation (CV): $CV = \frac{s}{\bar{x}} \times 100\%$
 \end{enumerate}
+
+\Remark{Why use $n-1$? becuase it is proved to be more accurate.}
+
+Disadvantages of Range: sensitive to outliers
+
+Variance means the distance from the mean
+
 
 \end{document}
