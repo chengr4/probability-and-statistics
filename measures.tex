@@ -62,14 +62,48 @@ Population Median: $\eta$ (eta)
     \item Range: $R = \text{max} - \text{min}$
     \item Variance: population $\sigma^2 = \frac{\sum (X_i - \mu)^2}{N}$, sample $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} = \frac{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}{n-1} $
     \item Standard Deviation: population $\sigma = \sqrt{\sigma^2}$, sample $s = \sqrt{s^2}$
-    \item Coefficient of Variation (CV): $CV = \frac{s}{\bar{x}} \times 100\%$
+    \item Coefficient of Variation (CV): population $CV = \frac{\sigma}{\mu} \times 100\%$, sample $CV = \frac{s}{\bar{x}} \times 100\%$ (no unit)
 \end{enumerate}
 
 \Remark{Why use $n-1$? becuase it is proved to be more accurate.}
 
 Disadvantages of Range: sensitive to outliers
 
-Variance means the distance from the mean
+Variance represents the distance from the mean
+
+Variance and Standard Deviation are absolute measures of dispersion (about mean),
+while Coefficient of Variation is a relative measure of dispersion (about mean).
+
+\subsection*{Skewness}
+
+Aka. shape of the distribution
+
+3 types of skewness:
+
+\begin{enumerate}
+    \item Symmetrical: mean = median = mode
+    \item Right Skewness or Positive Skewness: mean $>>$ median
+    \item Left Skewness or Negative Skewness: mean $<<$ median
+\end{enumerate}
+
+Skewness Coefficient ($g_1$): $g_1 = \frac{\frac{\sum (X_i - \bar{x})^3}{n-1}}{s^3}$
+
+\begin{enumerate}
+    \item $g_1 = 0$: symmetrical 
+    \item $g_1 > 0$: right skewness
+    \item $g_1 < 0$: left skewness
+\end{enumerate}
+
+\subsection*{Kurtosis}
+
+\[ g_2 = \frac{\frac{\sum(x_i - \bar{x})^4}{n-1}}{s^4} - 3\]
+
+\begin{enumerate}
+    \item $g_2 = 0$: meso-kurtic
+    \item $g_2 > 0$: lepto-kurtic (more peaked)
+    \item $g_2 < 0$: platy-kurtic (less peaked)
+\end{enumerate}
+
 
 
 \end{document}
