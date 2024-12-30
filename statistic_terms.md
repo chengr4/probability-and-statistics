@@ -41,3 +41,13 @@
 3. 收集資料並分析
 4. 推論
 5. 衡量可靠度
+
+## Translation
+
+| English | Chinese |
+| ------- | ------- |
+| Covariance | 共變異數 |
+| Correlation Coefficient | 相關係數 |
+| bivariate | 二元變數 |
+| intercept | 截距 |
+| slope | 斜率 |

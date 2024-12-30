@@ -23,7 +23,7 @@
 \begin{document}
 \maketitle
 
-\subsection*{For Continuous Data}
+\section*{For Continuous Data}
 
 \begin{enumerate}
     \item Central Tendency
@@ -119,4 +119,34 @@ Skewness Coefficient ($g_1$): $g_1 = \frac{\frac{\sum (X_i - \bar{x})^3}{n-1}}{s
     \item Cal $Q_1 = 0.25 * (n + 1)$; $Q_3 = 0.5 * (n + 1)$;
     \item If $Q_1$ or $Q_3$ is not an integer, take the average of the two values around it.
 \end{enumerate}
+
+\section*{For Bivariate Data}
+
+Two metrics to measure the \textcolor{red}{linear relationship} between two variables (strength and direction):
+
+\begin{enumerate}
+    \item Covariance (with unit)
+    \begin{itemize}
+        \item Population Covariance: $\sigma_{xy} = \frac{\sum (X_i - \mu_x)(Y_i - \mu_y)}{N}$
+        \item Sample Covariance: $s_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n-1} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{n-1}$
+    \end{itemize}
+    \item Correlation Coefficient (without unit)
+    \begin{itemize}
+        \item Population Correlation Coefficient: $\rho_{xy} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}$, where $-1 \leq \rho_{xy} \leq 1$
+        \item Sample Correlation Coefficient: $r_{xy} = \frac{s_{xy}}{s_x s_y}$, where $-1 \leq r_{xy} \leq 1$
+    \end{itemize}
+\end{enumerate}
+
+\Remark{$r = 0$ does not imply no relationship, it only implies no linear relationship.(Maybe strong curvilinear correlation)}
+
+If two variables have a linear relationship, we tend to find it regression equation (a.k.a. least suqare line).
+
+\[\hat{y} = a + bx\]
+
+where $\hat{y}$ is the dependent variable, $x$ is the independent variable, $a$ is the intercept, $b$ is the slope.
+
+$\Rightarrow$
+
+\[b = \frac{s_{xy}}{s_x^2} = r_{xy} \frac{s_y}{s_x},\quad a = \bar{y} - b\bar{x}\]
+
 \end{document}
