@@ -10,3 +10,4 @@
     - 我們感興趣的部分
     - Simple Event: 一個元素的事件 (atomic event)
     - Compound Event: 由兩個以上的元素組成的事件
+3. 機率 (Probability) => P(A) = #(Event) / #(Sample Space)
