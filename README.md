@@ -1,5 +1,9 @@
 # Probability and Statistics
 
+How to use this repository:
+
+The main content is provided in the **PDF**, with supplementary information available in the **Markdown** file
+
 ## 統計常用圖表
 
 - 散佈圖：兩個變數的關係

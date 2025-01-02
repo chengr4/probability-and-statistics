@@ -3,14 +3,27 @@
 \usepackage{fullpage}
 \usepackage{parskip} % skip a line instead of indenting
 % \usepackage{graphicx} % for inserting images
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{tikz} % for plot
 
-\title{Three Axioms of Probability}
-\author{Eddie Cheng}
+\newtheorem*{rem}{Remark}
+
+\title{Probability}
+\author{R4 Cheng}
 \date{\today}
+
+\newcommand{\Remark}[1]{
+  \begin{rem}
+    \color{cyan}
+    #1
+  \end{rem}
+}
 
 \begin{document}
 % \tableofcontents % generate a table of contents
 \maketitle
+
 \subsection*{Three Axioms of Probability}
 \begin{enumerate}
 \item $0 \leq P(A) \leq 1$ for any event $A$.
