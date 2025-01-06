@@ -37,7 +37,12 @@
 
 \begin{itemize}
     \item $P(\emptyset) = 0$ Empty set
-    \item $P(A)$
+    \item $P(A) + P(\bar{A} = 1)$: Complement
+    \item $P(A) = P(A - B) + P(A \cap B)$: DeMorgan's Law
+    \item $P(A \cup B) = P(A) + P(B) - P(A \cap B)$: Union and Intersection
+    \item If $A \subseteq B \Rightarrow P(A) \leq P(B)$: Inclusion-Exclusion Principle
+    \item Bool's Inequality: $P(A \cup B) \leq P(A) + P(B)$
+    \item Bonferroni's Inequality: $P(A \cap B) \geq P(A) + P(B) - 1$ (not sure)
 \end{itemize}
 
 \end{document}

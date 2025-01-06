@@ -8,22 +8,6 @@ The main content is provided in the **PDF**, with supplementary information avai
 
 - 散佈圖：兩個變數的關係
 
-### Derived from three axioms
-
-- P(∅) = 0: Empty set
-  ```math
-  S \cap ∅ = ∅: S, ∅ mutually exclusive
-  加以 S \cup ∅ = S
-  => P(S) = P(S \cup ∅) = P(S) + P(∅)
-  => P(∅) = 0
-  ```
-- P(A) + P(A') = 1: Complement
-- P(A) = P(A-B) + P(A∩B): DeMorgan's Law
-- P(A⋃B) = P(A) + P(B) - P(A∩B): Union and Intersection
-- If $A \in B$ => P(A) <= P(B): Inclusion-Exclusion Principle
-- Bool's Inequality: n個事件的連集機率 <= n個事件的機率之和
-- Bonferroni's Inequality: n個事件交集的機率 >= 1 - n個事件補集的機率之和
-
 ## Independent Events
 
 $$ P(A | B) = P(A) $$
