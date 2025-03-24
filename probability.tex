@@ -24,7 +24,7 @@
 % \tableofcontents % generate a table of contents
 \maketitle
 
-\subsection*{Three Axioms of Probability}
+\section*{Three Axioms of Probability}
 
 \begin{enumerate}
     \item $0 \leq P(A) \leq 1$ for any event $A$.
@@ -33,7 +33,7 @@
     \texttt{> mutually exclusive: $A_i \cap A_j = \emptyset$ for $i \neq j$.}
 \end{enumerate}
 
-\subsubsection*{Derived from three axioms}
+\subsection*{Derived from three axioms}
 
 \begin{itemize}
     \item $P(\emptyset) = 0$ Empty set
@@ -44,5 +44,29 @@
     \item Bool's Inequality: $P(A \cup B) \leq P(A) + P(B)$
     \item Bonferroni's Inequality: $P(A \cap B) \geq P(A) + P(B) - 1$ (not sure)
 \end{itemize}
+
+\subsection*{Events Relations and Probability Rules}
+
+\begin{itemize}
+  \item Dependent: A event is affected by another event.
+  \item Independent: A event is not affected by another event.
+  \item Mutually Exclusive: Two events cannot happen at the same time.
+\end{itemize}
+
+\section*{Counting Principles}
+
+Rule of Sum, Rule of Product, Permutations, Combinations
+
+\subsection*{Rule of Product}
+
+\subsection*{Permutations}
+
+\[ P(n, r) = n \cdot (n-1) \cdot \dots \cdot (n-r+1) = \frac{n!}{(n-r)!} \]
+
+\textbf{Theorem:} Number of permutations of $n$ distinct objects arranged in a \textbf{circle} is $(n-1)!$.
+
+\subsection*{Combinations}
+
+\[ C(n, r) = \frac{P(n, r)}{r!} = \frac{n!}{r!(n-r)!} \]
 
 \end{document}
