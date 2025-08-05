@@ -45,13 +45,34 @@
     \item Bonferroni's Inequality: $P(A \cap B) \geq P(A) + P(B) - 1$ (not sure)
 \end{itemize}
 
-\subsection*{Events Relations and Probability Rules}
+\section*{Events Relations and Probability Rules}
 
 \begin{itemize}
-  \item Dependent: A event is affected by another event.
-  \item Independent: A event is not affected by another event.
-  \item Mutually Exclusive: Two events cannot happen at the same time.
+    \item Dependent: A event is affected by another event.
+    \item Independent: A event is not affected by another event.
+    \item Mutually Exclusive: Two events cannot happen at the same time.
 \end{itemize}
+
+Mutually Exclusive in Venn diagram:
+
+\begin{tikzpicture}
+    % Draw sample space
+    \draw[thick] (-1.5,-2) rectangle (4.5,2) node[below right] {\Large $S$};
+
+    % Draw circles
+    \draw[thick] (0,0) circle (1cm) node[left=1cm, above=0.5cm] {\Large $A$};
+    \draw[thick] (3,0) circle (1cm) node[right=1cm, above=0.5cm] {\Large $B$};
+  
+    % Label mutually exclusive condition
+    \node at (1.5, -3) {\Large $A \cap B = \emptyset$};
+\end{tikzpicture}
+
+\subsection*{Independent Events}
+
+We usually use $P(A \mid B) = P(A)$ and  $P(B \mid A) = P(B)$ to check
+if two events are independent.
+
+\[P(A \cap B) = P(A) \cdot P(B)\]
 
 \section*{Counting Principles}
 
@@ -68,5 +89,24 @@ Rule of Sum, Rule of Product, Permutations, Combinations
 \subsection*{Combinations}
 
 \[ C(n, r) = \frac{P(n, r)}{r!} = \frac{n!}{r!(n-r)!} \]
+
+\section*{Finding Probability}
+
+Generally, we need to list and find sample space, then count the number of favorable outcomes and find the probability.
+
+If the experiment meets some attributes, we can use the following methods:
+
+\subsection*{Binomial Distribution}
+
+If the experiment meets the following conditions:
+
+\begin{itemize}
+    \item The experiment is repeated $n$ times.
+    \item Each trial has two outcomes: success or failure.
+    \item The probability of success is $p$ and the probability of failure is $q = 1 - p$.
+    \item The trials are independent.
+\end{itemize}
+
+\subsection*{}
 
 \end{document}
