@@ -7,17 +7,12 @@
 \usepackage{xcolor}
 \usepackage{tikz} % for plot
 
-\newtheorem*{rem}{Remark}
-
 \title{Probability}
 \author{R4 Cheng}
 \date{\today}
 
-\newcommand{\Remark}[1]{
-  \begin{rem}
-    \color{cyan}
-    #1
-  \end{rem}
+\newcommand{\remark}[1]{
+    {\small $>$ {\color{blue} #1}}
 }
 
 \begin{document}
@@ -107,6 +102,51 @@ If the experiment meets the following conditions:
     \item The trials are independent.
 \end{itemize}
 
-\subsection*{}
+\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]
+\[\text{Mean: } E[X] = np\]
+\[\text{Variance: } \text{Var}(X) = np(1-p)\]
+
+\remark{Binomial distribution is sum of independent Bernoulli trials.}
+
+\subsection*{Bernoulli Distribution}
+
+Binomial distribution with $n = 1$.
+
+\subsection*{Hypergeometric Distribution}
+
+If the experiment meets the following conditions:
+
+\begin{itemize}
+    \item $N$ items are in the experiment
+    \item Get $n$ items from $N$ without replacement.
+    \item $N = a + (N-a)$ where $a$ is the number of success items and $N-a$ is the number of failure items.
+    \item The probability of success
+\end{itemize}
+
+\[P(X = k) = \frac{\binom{a}{k} \binom{N-a}{n-k}}{\binom{N}{n}}\]
+\[\text{Mean: } E[X] = n \cdot \frac{a}{N}\]
+\[\text{Variance: } \text{Var}(X) = n \cdot \frac{a}{N} \cdot \frac{N-a}{N} \cdot \frac{N-n}{N-1}\]
+
+\subsection*{Poisson Probability Distribution}
+
+The Poisson distribution is used to describe the probability of rare events occurring within a \textbf{specific time or area}.
+
+If the experiment meets the following conditions:
+
+\begin{itemize}
+    \item The number of events in a given interval of time or space is counted.
+    \item The rate of occurrence of the event is constant.
+    \item The occurrence of one event does not affect the occurrence of another event.
+\end{itemize}
+
+\[P(X = k) = \frac{(\lambda t)^k e^{-\lambda t}}{k!} \quad \text{for} \quad x = 0,1,2\]
+where $\lambda$ is the average number of events occurring in a unit interval of time or space (e.g., per unit time or per unit area)
+
+\remark{\(e = 2.718\)}
+
+\[\text{Mean: } E(x) = \mu = \lambda t\]
+\[\text{Variance: } \text{Var}(x) = \lambda t = \text{mean}\]
+
+\remark{Poisson distribution can be used as an approximation to the binomial distribution when $n$ is large and $p$ is small, where $\mu = np$.}
 
 \end{document}
